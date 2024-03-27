@@ -17,54 +17,59 @@
 <body>
 
     <section class="map-sec">
-        <div class="header-div">
-            <h1 class="mb-4">
-                IP Address Tracker
-            </h1>
-            <form action="#" class="d-flex form-style">
-                <!-- <input type="text" placeholder="Search for any IP address or domain"> -->
-                <div class="form-group w-100">
-                    <input class="w-100" type="text" placeholder="Search for any IP address or domain" name="IP">
-                    <label for="IP" class="form-label">Search for any IP address or domain</label>
+        <div class="header-div position-relative">
+            <div class="w-100">
+                <img width="100%" height="279px" class="w-100" src="public/images/pattern-bg-desktop.png" alt="">
+            </div>
+            <div class="position-header">
+                <h1 class="mb-4 text-center">
+                    IP Address Tracker
+                </h1>
+                <form action="#" class="d-flex form-style">
+                    <!-- <input type="text" placeholder="Search for any IP address or domain"> -->
+                    <div class="form-group w-100">
+                        <input class="w-100" type="text" placeholder="Search for any IP address or domain" name="IP">
+                        <label for="IP" class="form-label">Search for any IP address or domain</label>
+                    </div>
+                    <button class="bg-very-dark btn px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+                    </button>
+                </form>
+            </div>
+            <div class="ip-address-div position-absolute top-100 start-50 translate-middle">
+                <div class="px-4 my-2 border-rt-div div-padding-for-border">
+                    <p class="color-gray">
+                        IP Address
+                    </p>
+                    <h3>
+                        192.212.174.101
+                    </h3>
                 </div>
-                <button class="bg-very-dark btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
-                </button>
-            </form>
-        </div>
-        <div class="ip-address-div">
-            <div class="px-4">
-                <p class="color-gray">
-                    IP Address
-                </p>
-                <h3>
-                    192.212.174.101
-                </h3>
-            </div>
-            <div class="px-4">
-                <p class="color-gray">
-                    Location
-                </p>
-                <h3>
-                    Brooklyn, NY 10001
-                </h3>
-            </div>
-            <div class="px-4">
-                <p class="color-gray">
-                    Timezone
-                </p>
-                <h3>
-                    UTC-05:00
-                </h3>
-            </div>
-            <div class="px-4">
-                <p class="color-gray">
-                    ISP
-                </p>
-                <h3>
-                    SpaceX
-                    Starlink
-                </h3>
+                <div class="px-4 my-2 border-rt-div">
+                    <p class="color-gray">
+                        Location
+                    </p>
+                    <h3>
+                        Brooklyn, NY 10001
+                    </h3>
+                </div>
+                <div class="px-4 my-2 border-rt-div">
+                    <p class="color-gray">
+                        Timezone
+                    </p>
+                    <h3>
+                        UTC-05:00
+                    </h3>
+                </div>
+                <div class="px-4 my-2">
+                    <p class="color-gray">
+                        ISP
+                    </p>
+                    <h3>
+                        SpaceX
+                        Starlink
+                    </h3>
+                </div>
             </div>
         </div>
         <div id="map"></div>

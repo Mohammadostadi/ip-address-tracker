@@ -25,20 +25,34 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(/public/images/pattern-bg-desktop.png) no-repeat;
+    /* background: url(/public/images/pattern-bg-desktop.png) no-repeat;
     height: 35vh;
-    background-size: cover;
+    background-size: cover; */
     color: #fff;
+    height: 279px;
 }
 
+.position-header{
+    position: absolute;
+    top: 25px;
+}
 
 .ip-address-div{
+    z-index: 999;
+    background-color: var(--clr-white);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ip-address-div div h3{
+    color: #000;
+}
+.border-rt-div{
+    border-right: 1px solid;
+    border-color: var(--clr-dark-gray);
 }
 
 
@@ -59,7 +73,7 @@ body{
 }
 #map{
     width: 100% !important;
-    height: 43vh !important;
+    height: 60vh !important;
 }
 
 
@@ -68,7 +82,19 @@ body{
     .ip-address-div{
         flex-direction: column;
         text-align: center;
-    }    
+        top:356px !important;
+    }   
+    #map{
+        height: 72vh !important;
+    }
+    .border-rt-div{
+        border-style: none;
+    }
+}
+@media(max-width:2292px){
+    .div-padding-for-border{
+        padding: 1.5rem !important;
+    }
 }
 
 
