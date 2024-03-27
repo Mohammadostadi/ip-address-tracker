@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'rubik';
+    src: url(/public/fonts/Rubik-Black.ttf),
+    url(/public/fonts/Rubik-Bold.ttf),
+    url(//public/fonts/Rubik-Medium.ttf),
+    url(/public/fonts/Rubik-Light.ttf)
+}

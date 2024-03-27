@@ -1,0 +1,109 @@
+@import url(/assets/style/font.css);
+
+:root{
+    --clr-very-dark-gray: hsl(0, 0%, 17%);
+    --clr-dark-gray: hsl(0, 0%, 59%);
+    --clr-white: #fff;
+}
+
+body{
+    font-family: 'rubik';
+    margin: 0; 
+    padding: 0;
+}
+
+.color-gray{
+    color: var(--clr-dark-gray);
+}
+.bg-very-dark{
+    background-color: var(--clr-very-dark-gray);
+}
+
+
+.header-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/public/images/pattern-bg-desktop.png) no-repeat;
+    height: 35vh;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.ip-address-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.form-style input{
+    border-radius: 10px;
+    border-style: none;
+}
+.form-style{
+    background-color: var(--clr-white);
+    border-radius: 10px;
+}
+.form-style button{
+    border-radius: 0 10px 10px 0;
+}
+.form-style button:hover{
+    background-color: var(--clr-dark-gray) !important;
+    transition: all 1s;
+}
+#map{
+    width: 100% !important;
+    height: 43vh !important;
+}
+
+
+
+@media(max-width: 768px) {
+    .ip-address-div{
+        flex-direction: column;
+        text-align: center;
+    }    
+}
+
+
+
+
+.form-group{
+    position: relative;
+}
+.form-group input{
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #eee;
+    transition: .15s all ease;
+}
+.form-group input:focus{
+    border-color: var(--clr-dark-gray);
+}
+.form-group input::placeholder{
+    color: transparent;
+}
+.form-label{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    padding: 0 .7rem;
+    color: var(--clr-dark-gray);
+    pointer-events: none;
+    transition: .15s all ease;
+}
+.form-group input:focus + .form-label,
+input:not(:placeholder-shown) +
+.form-label{
+    transform: translate(5px, -22px);
+    color: var(--clr-very-dark-gray);
+    background-color: var(--clr-white);
+    border-radius: 10px;
+}
